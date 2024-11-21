@@ -1,10 +1,11 @@
 package com.example.springbootawsweb.config.auth.dto;
 
 import com.example.springbootawsweb.domain.user.User;
+import java.io.Serializable;
 import lombok.Getter;
 
 @Getter
-public class SessionUser {
+public class SessionUser implements Serializable {
 
     private String name;
     private String email;
